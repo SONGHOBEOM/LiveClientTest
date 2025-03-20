@@ -12,7 +12,13 @@ public class HUDController : Singleton<HUDController>
     [SerializeField] private EffectIcon effectIconPrefab;
 
     private Dictionary<EffectItemSO.EffectItemData, EffectIcon> _effectIcons = new();
-    
+
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
     private void Update()
     {
         slider.maxValue = EntityManager.Instance.PlayerController.GetStat(PlayerStat.MaxHealth);

@@ -31,9 +31,6 @@ public partial class PlayerController : MonoBehaviour
         _animator = GetComponent<Animator>();
 
         _mainCamera = Camera.main;
-        
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
     }
 
     private void Update()
