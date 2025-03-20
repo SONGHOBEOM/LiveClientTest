@@ -16,7 +16,7 @@ Effect와 관련된 Script입니다. 이번 과제의 중심이 되는 코드라
 ### [Scripts/Singleton] (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Singleton)
 Singleton 패턴과 Manager class를 구현한 Script입니다.
 
-### [Scripts/Player] )https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Player)
+### [Scripts/Player] (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Player)
 Player의 움직임과 Player가 Effect Item을 획득했을 때, EffectData를 어떻게 다루는지를 구현한 Script입니다.
 
 
