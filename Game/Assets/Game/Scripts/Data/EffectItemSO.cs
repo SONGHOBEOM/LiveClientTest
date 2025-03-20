@@ -15,7 +15,6 @@ public class EffectItemSO : ScriptableObject
     public class EffectItemData
     {
         public EffectType effectType;
-        public PlayerStat targetStat;
         public EffectOperator effectOperator;
         public float duration;
         public EffectItem prefab;
