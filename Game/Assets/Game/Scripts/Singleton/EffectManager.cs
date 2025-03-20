@@ -26,7 +26,7 @@ public class EffectManager : Singleton<EffectManager>
     {
         foreach (var effect in _effects)
         {
-            if (effect.data.Equals(effectItemData))
+            if (effect.data == effectItemData)
                 return effect;
         }
 

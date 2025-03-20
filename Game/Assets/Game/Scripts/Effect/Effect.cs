@@ -8,8 +8,8 @@ public static class EffectFactory
     private static readonly List<Effect> EffectCaches = new();
     public static Effect CreateFactory(EffectItemSO.EffectItemData data)
     {
-        if (EffectCaches.Any(x => x.EffectType == data.effectType))
-            return EffectCaches.FirstOrDefault(x => x.EffectType == data.effectType);
+        if (EffectCaches.Any(x => x.effectType == data.effectType))
+            return EffectCaches.FirstOrDefault(x => x.effectType == data.effectType);
         
         switch (data.effectType)
         {
@@ -30,7 +30,7 @@ public static class EffectFactory
 
 public abstract class Effect
 {
-    public EffectItemSO.EffectType EffectType;
+    public EffectItemSO.EffectType effectType;
     public EffectItemSO.EffectItemData data;
 
     public float Duration { get; protected set; }
@@ -44,7 +44,7 @@ public abstract class Effect
     public Effect(EffectItemSO.EffectItemData data)
     {
         this.data = data;
-        EffectType = data.effectType;
+        effectType = data.effectType;
         Duration = data.duration;
         ElapsedTime = 0;
     }
