@@ -52,8 +52,9 @@ public partial class PlayerController : MonoBehaviour
             var targetRotation = Quaternion.LookRotation(_agent.velocity.normalized);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
-
+        
         var currentSpeed = _agent.velocity.magnitude * MoveSpeed;
+        _agent.speed = MoveSpeed;
         _animator.SetFloat(Speed, currentSpeed, animationDampTime, Time.deltaTime);
     }
 

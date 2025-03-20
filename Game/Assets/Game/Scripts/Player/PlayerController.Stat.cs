@@ -46,6 +46,8 @@ public partial class PlayerController : MonoBehaviour
                 currentValue = statValue.value
             });
         }
+        
+        UpdateStats();
     }
 
     public void ApplyEffect(PlayerStat stat, EffectOperator effectOperator)
@@ -91,7 +93,7 @@ public partial class PlayerController : MonoBehaviour
                 multiplyValue *= buffOperator.multiplyValue;
             }
 
-            var statValue = GetStat(stat);
+            var statValue = GetStat(stat, false);
             statValue += sumValue;
             statValue *= multiplyValue;
             

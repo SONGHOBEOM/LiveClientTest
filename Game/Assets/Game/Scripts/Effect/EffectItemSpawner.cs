@@ -12,12 +12,12 @@ public class EffectItemSpawner : MonoBehaviour
         Spawn();
     }
 
-    public void Spawn()
+    private void Spawn()
     {
-        var speedUpItem = Instantiate(_effectItemSo.SpeedUpEffect.prefab);
+        var speedUpItem = Instantiate(_effectItemSo.SpeedUpEffect.prefab, Vector3.left, Quaternion.identity);
         speedUpItem.SetData(_effectItemSo.SpeedUpEffect);
 
-        var hpUpItem = Instantiate(_effectItemSo.MaxHpUpEffect.prefab);
+        var hpUpItem = Instantiate(_effectItemSo.MaxHpUpEffect.prefab, Vector3.right, Quaternion.identity);
         hpUpItem.SetData(_effectItemSo.MaxHpUpEffect);
     }
 }

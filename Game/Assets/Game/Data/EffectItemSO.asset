@@ -19,12 +19,14 @@ MonoBehaviour:
       sumValue: 0
       multiplyValue: 2
     duration: 10
-    prefab: {fileID: 0}
+    prefab: {fileID: 3468977886335262680, guid: 0cccac961af88d2419e73295b174489c, type: 3}
+    effectSprite: {fileID: 21300000, guid: 402605b11110deb4997c14f9a566cf5f, type: 3}
   maxHpUpData:
-    effectType: 2
+    effectType: 1
     targetStat: 2
     effectOperator:
       sumValue: 150
-      multiplyValue: 0
+      multiplyValue: 1
     duration: 10
-    prefab: {fileID: 0}
+    prefab: {fileID: 4560182833543882617, guid: d2f1097006d0ba74c97474dd85820cb4, type: 3}
+    effectSprite: {fileID: 21300000, guid: 62d47193d6d5c1c4d906d1b9625d67b7, type: 3}
