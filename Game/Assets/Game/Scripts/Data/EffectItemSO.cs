@@ -20,6 +20,16 @@ public class EffectItemSO : ScriptableObject
         public float duration;
         public EffectItem prefab;
         public Sprite effectSprite;
+
+        public bool Equals(EffectItemData other)
+        {
+            return effectType == other.effectType &&
+                   targetStat == other.targetStat &&
+                   effectOperator.Equals(other.effectOperator) &&
+                   Mathf.Approximately(duration, other.duration) &&
+                   prefab == other.prefab &&
+                   effectSprite == other.effectSprite;
+        }
     }
 
     [Header("Speed Up Effect")]
