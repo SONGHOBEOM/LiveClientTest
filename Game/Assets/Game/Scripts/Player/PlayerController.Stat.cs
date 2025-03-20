@@ -79,11 +79,11 @@ public partial class PlayerController : MonoBehaviour
 
     private void UpdateStats()
     {
-        var sumValue = 0.0f;
-        var multiplyValue = 1.0f;
-
         foreach (var keyValuePair in _appliedBuffOperators)
         {
+            var sumValue = 0.0f;
+            var multiplyValue = 1.0f;
+            
             var stat = keyValuePair.Key;
             var buffOperators = keyValuePair.Value;
 
