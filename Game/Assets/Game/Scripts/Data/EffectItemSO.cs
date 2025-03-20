@@ -19,6 +19,7 @@ public class EffectItemSO : ScriptableObject
         public EffectOperator effectOperator;
         public float duration;
         public EffectItem prefab;
+        public Sprite effectSprite;
     }
 
     [Header("Speed Up Effect")]

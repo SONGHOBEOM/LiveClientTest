@@ -36,6 +36,8 @@ public abstract class Effect
     public float Duration { get; protected set; }
     public float ElapsedTime { get; protected set; }
 
+    public float RemainTime => Duration - ElapsedTime;
+
     public bool IsExpired => ElapsedTime >= Duration;
     protected PlayerController PlayerController => EntityManager.Instance.PlayerController;
     
@@ -54,6 +56,8 @@ public abstract class Effect
     {
         ElapsedTime += deltaTime;
     }
+
+    public void ResetElapsedTime() => ElapsedTime = 0;
 }
 
 public class SpeedUpEffect : Effect
@@ -116,28 +120,4 @@ public struct EffectOperator : IEquatable<EffectOperator>
 public interface IPickable
 {
     public void PickUp();
-}
-
-public abstract class EffectItem : MonoBehaviour, IPickable
-{
-    public EffectItemSO.EffectItemData effectItemData;
-
-    public void SetData(EffectItemSO.EffectItemData data)
-    { 
-        effectItemData = data;
-    }
-    
-    public void OnTriggerEnter(Collider other)
-    {
-        var player = other.GetComponent<PlayerController>();
-        if (player == null)
-            return;
-        
-        PickUp();     
-    }
-    
-    public void PickUp()
-    {
-        EffectManager.Instance.ApplyEffect(effectItemData);
-    }
 }

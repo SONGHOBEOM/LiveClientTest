@@ -5,27 +5,37 @@ using UnityEngine.Serialization;
 public class EffectManager : Singleton<EffectManager>
 {
     private List<Effect> _effects = new();
-    
-    private Awaitable _checkEffectDurationAwaitable;
 
     private void Start()
     {
-        _checkEffectDurationAwaitable = CheckEffectDuration();
+        CheckEffectDuration();
     }
 
     public void ApplyEffect(EffectItemSO.EffectItemData effectItemData)
     {
-        var buff = EffectFactory.CreateFactory(effectItemData);
-        _effects.Add(buff);
-        buff.ApplyEffect();
+        var effect = EffectFactory.CreateFactory(effectItemData);
+        effect.ResetElapsedTime();
+        
+        _effects.Remove(effect);
+        _effects.Add(effect);
+        
+        effect.ApplyEffect();
+    }
 
-        if (_checkEffectDurationAwaitable == null || _checkEffectDurationAwaitable.IsCompleted)
-            _checkEffectDurationAwaitable = CheckEffectDuration();
+    public Effect GetEffect(EffectItemSO.EffectItemData effectItemData)
+    {
+        foreach (var effect in _effects)
+        {
+            if (effect.data.Equals(effectItemData))
+                return effect;
+        }
+
+        return null;
     }
     
     private async Awaitable CheckEffectDuration()
     {
-        while (_effects.Count > 0)
+        while (true)
         {
             for(var i = 0; i < _effects.Count; ++i)
             {
@@ -33,6 +43,7 @@ public class EffectManager : Singleton<EffectManager>
                 
                 if (effect.IsExpired)
                 {
+                    effect.ResetElapsedTime();
                     effect.UnApplyEffect();
                     _effects.Remove(effect);
                     continue;
