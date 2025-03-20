@@ -10,20 +10,28 @@
 
 ### [Scripts/Data] 
 #### (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Data)
-### Game에서 사용하는 Effect ScriptableObject를 생성하는 Script입니다.
+#### Game에서 사용하는 Effect ScriptableObject를 생성하는 Script입니다.
+
+##
 
 ### [Scripts/Effect] 
 #### (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Effect)
-### Effect와 관련된 Script입니다. 
-### 과제 2> 리팩토링 (ApplyEffect)와 관련된 코드는 Effect class의 ApplyEffect() 를 확인해주시면 감사하겠습니다.
+#### Effect와 관련된 Script입니다. 
+#### 과제 2> 리팩토링 (ApplyEffect)와 관련된 코드는 Effect class의 ApplyEffect() 를 확인해주시면 감사하겠습니다.
+
+##
 
 ### [Scripts/Singleton] 
 #### (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Singleton)
-### Singleton 패턴과 Manager class를 구현한 Script입니다.
+#### Singleton 패턴과 Manager class를 구현한 Script입니다.
+
+##
 
 ### [Scripts/Player] 
 #### (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Player)
-### Player의 움직임과 Player가 Effect Item을 획득했을 때, EffectData를 어떻게 다루는지를 구현한 Script입니다.
+#### Player의 움직임과 Player가 Effect Item을 획득했을 때, EffectData를 어떻게 다루는지를 구현한 Script입니다.
+
+##
 
 ## 
 
