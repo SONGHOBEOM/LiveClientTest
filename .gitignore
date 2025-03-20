@@ -1,0 +1,5 @@
+﻿Game/UserSettings
+Game/Logs
+Game/obj
+Game/Temp
+*.csproj
