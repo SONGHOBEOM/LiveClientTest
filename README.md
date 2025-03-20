@@ -6,6 +6,8 @@
 #### 과제에 대한 제 코드를 보시기 편하도록 하단에 폴더명을 중심으로 정리하였습니다.
 #### 선배 프로그래머분들께 평가받게 되어 영광입니다. 잘부탁드립니다.
 
+
+
 ### [Scripts/Data] (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Data)
 Game에서 사용하는 Effect ScriptableObject를 생성하는 Script입니다.
 
