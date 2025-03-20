@@ -8,16 +8,20 @@
 
 ## 
 
-### [Scripts/Data] (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Data)
+### [Scripts/Data] 
+#### (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Data)
 Game에서 사용하는 Effect ScriptableObject를 생성하는 Script입니다.
 
-### [Scripts/Effect] (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Effect)
+### [Scripts/Effect] 
+#### (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Effect)
 Effect와 관련된 Script입니다. 이번 과제의 중심이 되는 코드라고 생각합니다.
 
-### [Scripts/Singleton] (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Singleton)
+### [Scripts/Singleton] 
+#### (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Singleton)
 Singleton 패턴과 Manager class를 구현한 Script입니다.
 
-### [Scripts/Player] (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Player)
+### [Scripts/Player] 
+#### (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Player)
 Player의 움직임과 Player가 Effect Item을 획득했을 때, EffectData를 어떻게 다루는지를 구현한 Script입니다.
 
 ## 
