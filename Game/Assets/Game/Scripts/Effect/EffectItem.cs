@@ -1,5 +1,10 @@
 using UnityEngine;
 
+public interface IPickable
+{
+    public void PickUp();
+}
+
 public class EffectItem : MonoBehaviour, IPickable
 {
     private EffectItemSO.EffectItemData _effectItemData;

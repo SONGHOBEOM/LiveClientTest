@@ -116,8 +116,3 @@ public struct EffectOperator : IEquatable<EffectOperator>
                Mathf.Approximately(multiplyValue, other.multiplyValue);
     }
 }
-
-public interface IPickable
-{
-    public void PickUp();
-}
