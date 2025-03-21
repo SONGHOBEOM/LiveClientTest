@@ -12,6 +12,8 @@
 ##### 특히, 대부분의 협업을 진행하는 기획자가 직접 연산자와 값을 넣어서 간단한 버프들은 쉽게 개발할 수 있도록 Scriptable Object Data를 Inspector에서 쉽게 추가 및 수정할 수 있도록 하였습니다.
 <img width="531" alt="inspector" src="https://github.com/user-attachments/assets/78cbcbe0-b332-4a66-801e-fca383f3be41" />
 
+##
+
 #### 과제에 대한 제 코드를 보시기 편하도록 하단에 폴더명을 중심으로 정리하였습니다.
 #### 잘 부탁드립니다!
 
