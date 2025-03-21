@@ -31,6 +31,12 @@
 #### (https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Player)
 #### Player의 움직임과 Player가 Effect Item을 획득했을 때, EffectData를 어떻게 다루는지를 구현한 Script입니다.
 
-## 
+##
+
+### Play Video Link
+#### https://youtu.be/w_bq9fNjy9Y
+#### 과제 시연 영상 링크입니다.
+
+##
 
 ### 이상입니다. 귀한 시간 내주셔서 감사합니다.
