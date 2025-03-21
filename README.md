@@ -33,7 +33,7 @@
 
 ##
 
-### Play Video Link
+### [Video Link]
 #### https://youtu.be/w_bq9fNjy9Y
 #### 과제 시연 영상 링크입니다.
 
