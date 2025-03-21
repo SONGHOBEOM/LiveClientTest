@@ -20,7 +20,7 @@
 #### Game에서 사용하는 Effect ScriptableObject를 생성하는 Script입니다.
 
 ##### 게임 개발은 프로그래머 혼자서 진행하는 것이 아닌 팀원들과의 협업으로 이루어집니다.
-##### 특히, 대부분의 협업을 진행하는 기획자가 직접 연산자와 값을 넣어서 간단한 버프들은 쉽게 개발할 수 있도록 \nScriptable Object Data를 Inspector에서 쉽게 추가 및 수정할 수 있도록 하였습니다.
+##### 특히, 대부분의 협업을 진행하는 기획자가 직접 연산자와 값을 넣어서 간단한 버프들은 쉽게 개발할 수 있도록 Scriptable Object Data를 Inspector에서 쉽게 추가 및 수정할 수 있도록 하였습니다.
 <img width="531" alt="inspector" src="https://github.com/user-attachments/assets/78cbcbe0-b332-4a66-801e-fca383f3be41" />
 
 ##
