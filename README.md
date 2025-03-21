@@ -28,7 +28,7 @@
 ### [Scripts/Effect] 
 #### https://github.com/SONGHOBEOM/LiveClientTest/tree/main/Game/Assets/Game/Scripts/Effect
 #### Effect와 관련된 Script입니다. 
-#### 과제 2> 리팩토링 (ApplyEffect)와 관련된 코드는 Effect class의 ApplyEffect() 를 확인해주시면 감사하겠습니다.
+##### 과제 2> 리팩토링 (ApplyEffect)와 관련된 코드는 Effect class의 ApplyEffect() 를 확인해주시면 감사하겠습니다.
 
 ##
 
